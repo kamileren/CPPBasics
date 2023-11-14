@@ -28,7 +28,22 @@ To make the most of this collection:
 - A C++ compiler (e.g., GCC, Clang, MSVC) installed on your system.
 
 ## Compiling and Running
-To compile and run a source file, use a C++ compiler with the command line. For example, to compile `Source1.cpp`:
-```bash
-g++ Source1.cpp -o Source1
-./Source1
+To compile the source files using the provided Makefile, follow these steps:
+
+1. **Compile all programs**: To compile all the source files at once, simply run the `make` command in the directory containing the Makefile and the source files. This will create executable files for each source file.
+
+    ```bash
+    make
+    ```
+
+2. **Run an executable**: After compiling, you can run any of the generated executables. For example, to run the program compiled from `Source1.cpp`:
+
+    ```bash
+    ./Source1
+    ```
+
+3. **Clean up**: If you want to clean up and remove all the compiled executables, use the `make clean` command. This is useful for starting a fresh build.
+
+    ```bash
+    make clean
+    ```
